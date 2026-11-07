@@ -1,0 +1,19 @@
+[package]
+name = "win2xcur"
+version = "0.1.0"
+edition = "2021"
+description = "Pixel-exact Windows cursor (.cur/.ani) to Xcursor converter, std-only"
+license = "MIT"
+
+[lib]
+name = "win2xcur"
+path = "src/lib.rs"
+
+[[bin]]
+name = "win2xcur"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
